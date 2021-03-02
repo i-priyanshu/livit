@@ -1,10 +1,10 @@
 {
   "streams": [
     {
-      "title": "test file",
-      "description": "test file",
+      "title": "new Stream",
+      "description": "Brand new Stream",
       "userId": "111162713270813582973",
-      "id": "f8560185-1516-48d5-aa06-5a90013c79dd"
+      "id": 1
     }
   ]
 }
