@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from "uuid";
 import streams from "../APIs/streams";
 import history from "../history";
 import {
@@ -25,15 +26,20 @@ export const signOut = () => {
 
 export const createStream = (formValues) => async (dispatch, getState) => {
   const { userId } = getState().auth;
-  const response = await streams.post("/streams", { ...formValues, userId });
-
+  const id = uuidv4();
+  const response = await streams.post("/streams", {
+    ...formValues,
+    userId,
+    id,
+  });
+  // console.log(response.data);
   dispatch({ type: CREATE_STREAM, payload: response.data });
   history.push("/");
 };
 
 export const fetchStreams = () => async (dispatch) => {
   const response = await streams.get("/streams");
-
+  // console.log(response);
   dispatch({ type: FETCH_STREAMS, payload: response.data });
 };
 

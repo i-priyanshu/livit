@@ -9,7 +9,7 @@ const Modal = (props) => {
         className="ui basic modal visible active inverted"
       >
         <div className="ui icon header">
-          <i class="trash icon"></i>
+          <i className="trash icon"></i>
           {props.title}
         </div>
         <div className="content ui segment">{props.content}</div>

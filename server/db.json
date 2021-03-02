@@ -1,21 +1,10 @@
 {
   "streams": [
     {
-      "title": "stream",
-      "description": "new stream",
-      "id": 1
-    },
-    {
-      "title": "potato chips!!!",
-      "description": "eating potato chips until i die!!!!",
-      "userId": "115758784803021041469",
-      "id": 2
-    },
-    {
-      "title": "new stream ",
-      "description": "Test stream",
+      "title": "test file",
+      "description": "test file",
       "userId": "111162713270813582973",
-      "id": 3
+      "id": "f8560185-1516-48d5-aa06-5a90013c79dd"
     }
   ]
 }
